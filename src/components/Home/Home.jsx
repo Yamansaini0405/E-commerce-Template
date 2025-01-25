@@ -67,10 +67,10 @@ function Home() {
     },
   ];
   return (
-    <div className="main w-[80%] m-auto mt-6 space-y-4">
+    <div className="main w-[80%] m-auto mt-6 space-y-4 pb-8">
       <div className="categories">
         <h3 className="text-3xl font-semibold">
-          <span className="text-red-600">Browse </span>Ctaegories
+          <span className="text-orange-600">Browse </span>Ctaegories
         </h3>
         <div className="cards mt-4 flex justify-center items-center gap-x-8">
           {images.map((image) => {
@@ -81,7 +81,7 @@ function Home() {
 
       <div className="Most_popular mt-8">
         <h3 className="text-3xl font-semibold">
-          <span className="text-red-500">Most</span> Popular
+          <span className="text-orange-500">Most</span> Popular
         </h3>
         <div className="cards">
           <div className="cards mt-4 flex justify-center items-center gap-x-5">
@@ -99,9 +99,12 @@ function Home() {
         </div>
       </div>
 
-      <div className="dealsOfTheDays">
+      <div className="mt-8 font-sans">
+        <h3 className="text-4xl font-bold ">Exclusive!!</h3>
+      <div className="dealsOfTheDays flex justify-center items-center gap-x-8 mt-4">
         <DealsOfTheDays/>
         <DealsOfTheDays/>
+      </div>
       </div>
     </div>
   );

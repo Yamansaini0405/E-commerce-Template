@@ -7,7 +7,7 @@ import { BsCart3 } from "react-icons/bs";
 function Navbar() {
   return (
     <>
-      <div className="main shadow-2xl rounded-b-2xl p-4 flex justify-between items-center w-[100%] m-auto px-24">
+      <div className="main shadow-md rounded-b-2xl p-4 flex justify-between items-center w-[100%] m-auto px-24">
         <div className="flex justify-center items-center gap-x-6">
           {/* Logo div */}
           <div className="logo">
@@ -34,7 +34,7 @@ function Navbar() {
           </div>
 
           {/* login section  */}
-          <div className="text-lg font-semibold flex justify-center items-center gap-x-  hover:bg-red-600 hover:text-white px-2 rounded-xl ">
+          <div className="text-lg font-semibold flex justify-center items-center gap-x-  hover:bg-orange-600 hover:text-white px-2 rounded-xl ">
             <CgProfile className="text-xl" />
             <span className="ml-1 py-1 cursor-pointer">Login</span>
             <RiArrowDropDownLine className="text-2xl" />

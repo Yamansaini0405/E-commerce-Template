@@ -5,6 +5,7 @@ import CategoryCard from './components/utilities/CategoryCard.jsx'
 import Home from './components/Home/Home.jsx'
 import PopularCard from './components/utilities/PopularCard.jsx'
 import DealsOfTheDays from './components/utilities/DealsOfTheDay.jsx'
+import Footer from './components/Footer/Footer.jsx'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
     <Navbar/>
     <Slider/>
     <Home/>
+    <Footer/>
    
     
     

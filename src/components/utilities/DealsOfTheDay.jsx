@@ -31,10 +31,10 @@ function DealsOfTheDays() {
   }, [seconds, minutes, hours])
 
   return (
-    <div className="p-6 bg-[#f0f7f8] rounded-lg">
+    <div className="p-6 pt-2 bg-[#f8f1f0] rounded-lg flex justify-center items-center gap-x-8">
       {/* Left Content */}
       <div className="max-w-[50%]">
-        <h2 className="text-2xl font-bold text-teal-600">Deals of the Day</h2>
+        <h2 className="text-2xl font-bold text-orange-600">Deals of the Day</h2>
         <p className="text-gray-600 mb-4">Limited quantities</p>
 
         <h3 className="text-xl mb-4">Summer Collection New Modern Design</h3>
@@ -48,30 +48,34 @@ function DealsOfTheDays() {
         {/* Timer */}
         <p className="text-gray-600 mb-2">Hurry Up! Offer Ends In:</p>
         <div className="flex gap-2 mb-6">
-          <div className="bg-teal-600 text-white p-2 rounded text-center w-14">
+          <div className="bg-orange-600 text-white p-2 rounded text-center w-14">
             <div className="text-xl font-bold">{days}</div>
             <div className="text-xs">Days</div>
           </div>
           <div className="text-xl font-bold text-gray-400">:</div>
-          <div className="bg-teal-600 text-white p-2 rounded text-center w-14">
+          <div className="bg-orange-600 text-white p-2 rounded text-center w-14">
             <div className="text-xl font-bold">{hours}</div>
             <div className="text-xs">Hours</div>
           </div>
           <div className="text-xl font-bold text-gray-400">:</div>
-          <div className="bg-teal-600 text-white p-2 rounded text-center w-14">
+          <div className="bg-orange-600 text-white p-2 rounded text-center w-14">
             <div className="text-xl font-bold">{minutes}</div>
             <div className="text-xs">Mins</div>
           </div>
           <div className="text-xl font-bold text-gray-400">:</div>
-          <div className="bg-teal-600 text-white p-2 rounded text-center w-14">
+          <div className="bg-orange-600 text-white p-2 rounded text-center w-14">
             <div className="text-xl font-bold">{seconds}</div>
             <div className="text-xs">Sec</div>
           </div>
         </div>
 
-        <button className="border-2 border-teal-600 text-teal-600 px-6 py-2 rounded hover:bg-teal-600 hover:text-white">
+        <button className="border-2 border-orange-600 text-orange-600 px-6 py-2 rounded hover:bg-orange-600 hover:text-white">
           Shop Now
         </button>
+      </div>
+
+      <div className="image">
+        <img src="https://th.bing.com/th/id/R.5f4c18a1fc49020662501deb5ce1f80a?rik=TUdXl%2fR1eqBeaA&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2016%2f07%2fDress-PNG-HD.png&ehk=IvoXaoXA2bocZCnjzDi8g%2bWc6AKR6hyH6Clv09%2fx9Dw%3d&risl=&pid=ImgRaw&r=0" alt="" />
       </div>
       </div>
 

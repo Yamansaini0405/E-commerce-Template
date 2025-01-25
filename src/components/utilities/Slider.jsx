@@ -44,7 +44,7 @@ const Slider = () => {
         <button onClick={goToPrevious}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 text-white bg-red-600 rounded-full opacity-[0.6]"
+            className="h-8 w-8 text-white bg-orange-600 rounded-full opacity-[0.6]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -62,7 +62,7 @@ const Slider = () => {
         <button onClick={goToNext}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 text-white bg-red-600 rounded-full opacity-[0.6]"
+            className="h-8 w-8 text-white bg-orange-600 rounded-full opacity-[0.6]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -94,8 +94,8 @@ const Slider = () => {
             key={index}
             className={`w-3 h-2 rounded-xl cursor-pointer transition-all duration-300 ${
               index === currentIndex
-                ? "bg-red-600 scale-125"
-                : "bg-red-300 hover:bg-red-500"
+                ? "bg-orange-600 scale-125"
+                : "bg-orange-300 hover:bg-red-500"
             }`}
             onClick={() => {
               setCurrentIndex(index);
