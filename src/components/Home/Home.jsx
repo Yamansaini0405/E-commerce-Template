@@ -67,41 +67,47 @@ function Home() {
     },
   ];
   return (
-    <div className="main w-[80%] m-auto mt-6 space-y-4 pb-8">
-      <div className="categories">
-        <h3 className="text-3xl font-semibold">
-          <span className="text-orange-600">Browse </span>Ctaegories
-        </h3>
-        <div className="cards mt-4 flex justify-center items-center gap-x-8">
-          {images.map((image) => {
-            return <CategoryCard image={image.url} disc={image.disc} />;
-          })}
-        </div>
-      </div>
-
-      <div className="Most_popular mt-8">
-        <h3 className="text-3xl font-semibold">
-          <span className="text-orange-500">Most</span> Popular
-        </h3>
-        <div className="cards">
-          <div className="cards mt-4 flex justify-center items-center gap-x-5">
-            {popularCard.map((card) => {
-              return (
-                <PopularCard
-                  image={card.image}
-                  category={card.category}
-                  name={card.name}
-                  price={card.price}
+    <div className="main w-[95%] m-auto mt-6 space-y-4 pb-8 ">
+      <div className="p-4 md:p-8">
+      <h2 className="text-2xl md:text-3xl font-bold text-Start mb-6">
+        <span className="text-orange-600 text-start">Browse </span>Categories
+      </h2>
+      <div className="overflow-x-scroll md:overflow-x-visible ">
+        <div className="flex md:grid md:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-4 pb-4 md:pb-0 ">
+          {images.map((category) => (
+            <div key={category.name} className="flex-shrink-0 w-40 md:w-auto border-2 border-gray-400 px-2 py-3 pb-6 rounded-3xl">
+              <div className="text-center">
+                <img
+                  src={category.url || "/placeholder.svg"}
+                  alt={category.disc}
+                  width={200}
+                  height={200}
+                  className="w-full md:h-60 h-40 object-cover rounded-lg"
                 />
-              );
-            })}
-          </div>
+                <p className="mt-2 font-medium">{category.disc}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
+    </div>
 
-      <div className="mt-8 font-sans">
+    <div className="md:mt-8 p-4 md:p-8">
+      <h3 className="text-2xl md:text-3xl font-semibold mb-6">
+        <span className="text-orange-500">Most</span> Popular
+      </h3>
+      <div className="overflow-x-auto md:overflow-x-visible pb-4 md:pb-0">
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {popularCard.map((item, index) => (
+            <PopularCard key={index} image={item.image} category={item.category} name={item.name} price={item.price} />
+          ))}
+        </div>
+      </div>
+    </div>
+
+      <div className="mt-8 font-sans overflow-hidden">
         <h3 className="text-4xl font-bold ">Exclusive!!</h3>
-      <div className="dealsOfTheDays flex justify-center items-center gap-x-8 mt-4">
+      <div className="dealsOfTheDays flex justify-center items-center md:gap-x-8 mt-4 flex-col md:flex-row gap-y-8">
         <DealsOfTheDays/>
         <DealsOfTheDays/>
       </div>

@@ -10,7 +10,7 @@ function PopularCard({ image, category, name, price }) {
           <img src={image} alt="" className="w-full h-full rounded-3xl object-cover" />
         </div>
         <div className="flex justify-between in-checked:">
-        <div><p className="disc text-gray-600  text-start px-2 text-lg mt-2 text-sm">
+        <div><p className="disc text-gray-600  text-start px-2  mt-2 text-sm">
           {category}
         </p>
         <h3 className="text-xl font-semibold px-2">{name}</h3>

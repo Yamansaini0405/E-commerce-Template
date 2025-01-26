@@ -39,7 +39,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative w-[80%] h-[400px] md:h-[500px] lg:h-[400px] m-auto rounded-2xl mt-10">
+    <div className="relative md:w-[90%] w-[90%] h-[400px] md:h-[500px] lg:h-[400px] m-auto rounded-2xl mt-24">
       <div className="absolute top-1/2 left-4 transform -translate-y-1/2 cursor-pointer z-10 rounded-2xl">
         <button onClick={goToPrevious}>
           <svg

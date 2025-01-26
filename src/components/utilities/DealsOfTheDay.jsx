@@ -31,7 +31,7 @@ function DealsOfTheDays() {
   }, [seconds, minutes, hours])
 
   return (
-    <div className="p-6 pt-2 bg-[#f8f1f0] rounded-lg flex justify-center items-center gap-x-8">
+    <div className=" p-6 pt-2 bg-[#f8f1f0] rounded-lg flex justify-center items-center gap-x-8">
       {/* Left Content */}
       <div className="max-w-[50%]">
         <h2 className="text-2xl font-bold text-orange-600">Deals of the Day</h2>
@@ -47,7 +47,7 @@ function DealsOfTheDays() {
 
         {/* Timer */}
         <p className="text-gray-600 mb-2">Hurry Up! Offer Ends In:</p>
-        <div className="flex gap-2 mb-6">
+        <div className="md:flex gap-2 mb-6 hidden">
           <div className="bg-orange-600 text-white p-2 rounded text-center w-14">
             <div className="text-xl font-bold">{days}</div>
             <div className="text-xs">Days</div>
