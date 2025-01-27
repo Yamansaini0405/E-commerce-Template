@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { RiStarSLine } from "react-icons/ri";
 import { FaBagShopping } from "react-icons/fa6";
 
@@ -26,7 +27,7 @@ function PopularCard({ image, category, name, price }) {
           <RiStarSLine />
           <RiStarSLine />
         </p>
-        <span className="bg-orange-500 p-2 mr-2 rounded-full"><FaBagShopping className="mr- opacity text-white"/></span>
+        <span className="bg-orange-500 p-2 mr-2 rounded-full"><NavLink to='/cart'><FaBagShopping className="mr- opacity text-white"/></NavLink></span>
       </div>
         </div>
       </div>

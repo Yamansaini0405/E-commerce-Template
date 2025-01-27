@@ -2,6 +2,7 @@ import React from "react";
 import CategoryCard from "../utilities/CategoryCard";
 import PopularCard from "../utilities/PopularCard";
 import DealsOfTheDays from "../utilities/DealsOfTheDay";
+import Slider from '../utilities/Slider'
 
 function Home() {
   const popularCard = [
@@ -68,6 +69,7 @@ function Home() {
   ];
   return (
     <div className="main w-[95%] m-auto mt-6 space-y-4 pb-8 ">
+      <Slider/>
       <div className="p-4 md:p-8">
       <h2 className="text-2xl md:text-3xl font-bold text-Start mb-6">
         <span className="text-orange-600 text-start">Browse </span>Categories
