@@ -5,12 +5,10 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar.jsx";
-// import Slider from './components/utilities/Slider.jsx'
-// import CategoryCard from './components/utilities/CategoryCard.jsx'
+
+
 import Home from "./components/Home/Home.jsx";
-// import PopularCard from './components/utilities/PopularCard.jsx'
-// import DealsOfTheDays from './components/utilities/DealsOfTheDay.jsx'
+
 import Footer from "./components/Footer/Footer.jsx";
 import Layout from "./Layout.jsx";
 import AddToCard from "./components/AddToCart/AddToCard.jsx";
