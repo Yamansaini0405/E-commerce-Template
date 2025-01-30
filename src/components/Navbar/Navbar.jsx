@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { IoSearchSharp, IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -98,10 +99,10 @@ function Navbar() {
             onMouseLeave={() => setIsOpen(false)}
           >
             <CgProfile className="text-xl" />
-            <span className="ml-1 py-1 cursor-pointer hidden md:inline">Login</span>
+            <NavLink to="/login"><span className="ml-1 py-1 cursor-pointer hidden md:inline">Login</span></NavLink>
             {isOpen && (
               <div className="absolute right-0 w-64 bg-white rounded-lg shadow-lg border py-2 mt-[23rem] mr-[3rem]">
-                {/* Login dropdown content */}
+                
               </div>
             )}
             <RiArrowDropDownLine className="text-2xl hidden md:inline" />
@@ -109,7 +110,7 @@ function Navbar() {
 
           {/* Cart Section */}
           <div className="rounded-[50%] bg-black flex justify-center items-center p-2">
-            <BsCart3 className="text-xl font-bold text-white cursor-pointer" />
+            <NavLink to="/cart"><BsCart3 className="text-xl font-bold text-white cursor-pointer" /></NavLink>
           </div>
         </div>
 
